@@ -20,14 +20,12 @@ body {
 } */
 
 /* ---------- BLOCK ---------- */
-.data,
-.result {
-}
 
 .data {
   background-color: lightblue;
-  margin:1em auto;
+  margin:1em  auto;
   max-width: 400px;
+  border: 1px solid black;
 }
 
 .result {
