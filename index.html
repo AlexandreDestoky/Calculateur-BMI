@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculateur BMI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
+    <h1>BMI Calculateur</h1>
+    <div class="container">
+      <form class="data">
+        <div class="champ">
+          <label for="taille">Taille</label>
+          <input type="number" id="taille" name="taille" placeholder="en cm" min="120" max="250"/>
+        </div>
+        <div class="champ">
+          <label for="poids">Poids</label>
+          <input type="number" id="poids" name="poids" placeholder="en kg" min="25" max="400"/>
+        </div>
+        <input type="submit" value="Calculer" />
+      </form>
+      <div class="result">
+        <div class="bmi">Votre BMI est de 25</div>
+        <div class="indicateur">
+          <span class="taux">taux</span><i class="fas fa-caret-square-down"></i>
+        </div>
+        <div class="niveau">
+          <div class="niveau1">Sous poids</div>
+          <div class="niveau2">Normal</div>
+          <div class="niveau3">Surpoids</div>
+          <div class="niveau4">Obese</div>
+          <div class="niveau5">Obesité morbide</div>
+        </div>
+        <div class="info">Vous devriez perdre 5kg pour atteindre les </div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
