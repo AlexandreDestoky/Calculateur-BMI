@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculateur BMI</title>
+    <title>Calculateur BMI (IMC)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     
@@ -14,16 +14,16 @@
       <form class="data">
         <div class="champ">
           <label for="taille">Taille</label>
-          <input type="number" id="taille" name="taille" placeholder="en cm" min="120" max="250" required/>
+          <input type="number" id="taille" name="taille" placeholder="en cm" min="120" max="250" required value="175"/>
         </div>
         <div class="champ">
           <label for="poids">Poids</label>
-          <input type="number" id="poids" name="poids" placeholder="en kg" min="25" max="400" required/>
+          <input type="number" id="poids" name="poids" placeholder="en kg" min="25" max="400" required value="89"/>
         </div>
         <input type="submit" value="Calculer" />
       </form>
       <div class="result">
-        <div class="bmi">Votre BMI est de 25</div>
+        <div class="bmi"></div>
         <div class="indicateur">
           <span class="taux">taux</span><i class="fas fa-caret-square-down"></i>
         </div>
